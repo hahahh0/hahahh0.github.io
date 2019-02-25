@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Design
+title: Archive
 permalink: /design/
-category: "archive"
+category: "Design"
 tagline: "it's all about perception."
 ---
