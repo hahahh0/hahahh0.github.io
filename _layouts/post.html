@@ -32,6 +32,20 @@ layout: default
     </a>
   {% endif %}
   </footer>
-
+  
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'hahahh0',
+    repo: 'hahahh0.github.io',
+    oauth: {
+        client_id: '47cc9cf1be766d07a603',
+        client_secret: 'f8fa705220d18e094fdf92b4e16ce43042d7bf7c',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
 
 </article>
