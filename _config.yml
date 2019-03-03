@@ -19,3 +19,17 @@ theme-dark: false #Set to true to change to dark website theme
 plugins: [jekyll-paginate, kramdown]
 # Build settings
 markdown: kramdown
+
+gitment:
+  enable: true
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: {hahahh0}
+  github_repo: hahahh0.github.io
+  client_id: {47cc9cf1be766d07a603}
+  client_secret: {f8fa705220d18e094fdf92b4e16ce43042d7bf7c}
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
