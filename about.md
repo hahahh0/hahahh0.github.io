@@ -8,3 +8,4 @@ permalink: /about/
 
 ## 挂上些友链：
 - [P_Wang's Blog](https://tle666.github.io/)
+- [AcFunction's Blog](https://acfunction.github.io/)
