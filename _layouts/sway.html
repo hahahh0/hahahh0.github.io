@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"><a class="post-title-link"  href="{{page.url}}">{{ page.title }}</a></h1>
+  <center>  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    {% if page.author %}
+     <div class="">
+       <center><p ><strong><span class="authorKeyword">Author</span><span class="small-site-title"> <h2 style="letter-spacing: 3px !important;
+       text-transform: uppercase !important;">{{page.author}}</h2></span></strong></p></center>
+
+     </div>
+     {% endif %}
+   </center>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class="postNavigation">
+  {% if page.previous.url %}
+    <a class="postPrev" href="{{page.previous.url}}">
+        &laquo; {{page.previous.title}}
+    </a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="postNext" href="{{page.next.url}}">
+        {{page.next.title}} &raquo;
+    </a>
+  {% endif %}
+  </footer>
+  
+  <iframe width="760px" height="500px" src="https://sway.office.com/s/6q9uu7nCQOTUNUDK/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+  
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+    id: '{{ page.title }}',
+    owner: 'hahahh0',
+    repo: 'hahahh0.github.io',
+    oauth: {
+        client_id: '47cc9cf1be766d07a603',
+        client_secret: 'f8fa705220d18e094fdf92b4e16ce43042d7bf7c',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+
+</article>
