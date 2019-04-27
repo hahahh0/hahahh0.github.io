@@ -10,11 +10,11 @@ title: WangZhiLue
 email: lue007@qq.com
 description: WangZhiLue's Blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hahahh0.github.io" # the base hostname & protocol for your site
+url: "https://blog.lcjtql.ml/" # the base hostname & protocol for your site
 twitter_username:
 github_username:  hahahh0
 paginate: 5
-theme-dark: false #Set to true to change to dark website theme
+theme-dark: true #Set to true to change to dark website theme
 
 plugins: [jekyll-paginate, kramdown]
 # Build settings
