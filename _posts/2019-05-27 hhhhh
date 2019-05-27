@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "我的第一篇博客"
+date:   2019-02-25 19:45:31 +0530
+categories: ["design", "science", "life"]
+author: "WangZhiLue"
+---
+
+$sum1=\sum \limits_{i=1}^n a_i$
+
+$sum2=\sum \limits_{i=1}^n a_i^2$
+
+$sum3=\sum \limits_{i=1}^n a_i^3$
+
+$sum4=\sum \limits_{i=1}^n a_i^4$
+
+$\begin{aligned} &\sum _{i=1}^{n} \ \sum _{j=1}^{n}  \ \sum _{k=1}^n a_i^2 \cdot a_j \cdot a_k(i \neq j , j < k , i \neq k) \\ =&sum1^2*sum2-sum4-(sum2^2-sum4)-2*(sum3*sum1-sum4) \end{aligned}$
